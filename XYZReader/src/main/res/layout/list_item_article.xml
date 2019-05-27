@@ -7,11 +7,13 @@
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    android:foreground="?selectableItemBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <com.example.xyzreader.ui.DynamicHeightNetworkImageView
             android:id="@+id/thumbnail"
@@ -20,18 +22,30 @@
             android:scaleType="centerCrop"/>
 
         <TextView
+           android:textColor="@color/white"
             android:id="@+id/article_title"
-            style="@style/TextAppearance.AppCompat.Subhead"
+            style="@style/TitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="4dp"
+            android:paddingLeft="16dp"
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="4dp"
-            android:textColor="@color/white"
             android:ellipsize="end"
             android:maxLines="4"
             android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/article_subtitle"
+            style="@style/Body1Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end" />
 
         <!--<TextView-->
             <!--android:id="@+id/article_subtitle"-->

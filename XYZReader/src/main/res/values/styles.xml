@@ -13,6 +13,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="TitleStyle" parent="Base.TextAppearance.AppCompat.Subhead">
+
+    </style>
+    <style name="Body1Style" parent="Base.TextAppearance.AppCompat.Body1">
+
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
